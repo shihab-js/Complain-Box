@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Complain Box</title>
+</head>
+<body onload="showComplains()">
+    <div class="container">
+        <h2>Complain Box</h2>
+        <div class="jumbotron">
+            <h4>Drop your complain here</h4>
+            <form id="inputForm">
+                <div class="form-group">
+                    <label for="name">Enter your name</label>
+                    <input type="text" class="form-control" id="name">     
+                </div> 
+                <div class="form-group">
+                    <label for="compalin">Enter your complain</label>
+                    <input type="text" class="form-control" id="complain">     
+                </div>
+                <div class="form-group">
+                    <label for="complainTo">Complain to</label>
+                    <input type="text" class="form-control" id="complainTo">     
+                </div>
+                <button type="submit" class="btn btn-primary" id="addComplain">Add Complain</button>        
+            </form>       
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div id="complainList">
+                </div> 
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+    </body>
+</html>
